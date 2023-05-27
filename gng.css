@@ -30,12 +30,16 @@ body{
     height: 100px;
     display: flex;
     justify-content: center;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     margin-top: 10px;
+    margin: 10px 10px 0;
     opacity: 0.5;
     transition: 0.15s;
     object-fit: cover;
     /* margin-top: 40px; */
+}
+.photo1:nth-child(1){
+    margin-top: 0 !important;
 }
 .photo1:hover{
     /* width: 200px; */
@@ -59,23 +63,34 @@ body{
 
     opacity: 1;
 }
-/* .photoo{
-    display: flex;
-    justify-content: center;
-    margin-left: 300px;
-    margin-top: 10px;
 
-} */
 .photo2{
-    position: fixed;
-    left: 500px;
-    bottom: 116px;
-
+    position: absolute;
+    left: 0px;
+    top: 0px;
     width: 430px;
     height: 430px;
+
+    
     opacity: 0;
     transition: 0.15s;
     object-fit: cover;
     /* margin-top: 40px; */
 }
-/* .photo
+.photoo{
+    /* position: relative; */
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 440px;
+
+    
+}
+.bigphoto{
+    position: relative;
+    width: 430px;
+    height: 430px;
+}
